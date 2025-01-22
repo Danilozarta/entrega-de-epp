@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="diseño.css">
+    <li><a href="index.html">login</a></li>
+    <li><a href="registro de empleado.html">registro de empleado</a></li>
+    <li><a href="home.html">home</a></li>
+    <li><a href="historial.html">historial</a></li>
+</head>
+<body>
+    <header>
+        <h1>Entrega de EPP</h1>
+    </header>
+    <main2>
+        <section class="form-container2">
+            <form action="#" method="POST" enctype="multipart/form-data" autocomplete="on">
+                <fieldset2>
+                    <legend2><h2>Datos Personales</h2></legend2>
+
+                    <!-- Casilla Entregado -->
+                    <div class="form-group2s">
+                        <label for="entregado">Elemento Entregado:</label>
+                        <input type="text" id="entregado" name="entregado" list="entregado-list" placeholder="Ingrese el estado de entrega" required>
+                        <datalist id="entregado-list">
+                            <option>Casco</option>
+                            <option>Guantes</option>
+                            <option>Botas</option>
+                            <option>Careta</option>
+                        </datalist>
+                    </div>
+
+                    <!-- Casilla Cantidad -->
+                    <div class="form-group">
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" id="cantidad" name="cantidad" min="1" max="100" placeholder="Cantidad de productos" required>
+                    </div>
+
+                    <!-- Casilla Labor -->
+                    <div class="form-group">
+                        <label for="labor">Labor:</label>
+                        <input type="text" id="labor" name="labor" list="labor-list" placeholder="Ingrese la labor realizada" required>
+                        <datalist id="labor-list">
+                            <option value="Operario">
+                            <option value="Maquinista">
+                            <option value="Electrico">
+                            <option value="Oficina">
+                        </datalist>
+                    </div>
+
+                    <!-- Campo de la huella -->
+                    <div class="form-group">
+                        <label for="huella">Huella Dactilar:</label>
+                        <input type="file" id="huella" name="huella" accept="image/*" required>
+                        <p class="info">Seleccione una imagen de la huella dactilar</p>
+                    </div>
+
+                    <button type="submit">Enviar</button>
+                </fieldset>
+            </form>
+        </section>
+    </main2>
+</body>
+</html>
